@@ -1,0 +1,41 @@
+@media screen and (max-width: 500px) {
+  /* 
+    ==========
+    Discover Section
+    ==========
+*/
+  #discover .discover {
+    padding: 20px;
+  }
+
+  #discover .discover header {
+    text-align: center;
+  }
+  #discover .discover header h2 {
+    font-size: 25px;
+  }
+  #discover .discover header .filter__nav {
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+  }
+
+  #discover .discover header .filter__nav .discover__filter {
+    display: none;
+    justify-content: start;
+    align-items: start;
+    flex-direction: column;
+  }
+  #discover .discover header .filter__nav .filter__icon {
+    margin: 5% auto;
+  }
+
+  /* 
+==========
+Discover Card Section
+==========
+*/
+  #discover .discover .discover__cards {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
