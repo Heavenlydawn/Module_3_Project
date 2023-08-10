@@ -165,8 +165,8 @@ Footer Section
     top: 13%;
   }
 }
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 380px) {
   #nft__footer .nft__footer__cards .nft__footer__card .news_letter button {
-    right: 0px;
+    right: 50px;
   }
 }/*# sourceMappingURL=footer.css.map */
