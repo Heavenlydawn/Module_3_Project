@@ -129,11 +129,6 @@ Footer Section
 @media screen and (max-width: 500px) {
   #nft__footer .nft__footer {
     padding: 20px;
-    /*
-    ===============
-    Copy Right Section
-    ===============
-    */
   }
   #nft__footer .nft__footer__cards {
     display: flex;
@@ -146,17 +141,7 @@ Footer Section
   }
   #nft__footer .nft__footer__cards .nft__footer__card .news_letter button {
     padding: 15px;
-    right: 0%;
+    right: 70px;
     top: 13%;
-  }
-  #nft__footer .nft__footer .copy_right {
-    margin-block-start: 69px;
-    color: #a4a4a4;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 160%;
-    text-align: center;
-    padding: 24px 0;
-    border-top: 2px solid #f4f4f4;
   }
 }/*# sourceMappingURL=footer.css.map */
