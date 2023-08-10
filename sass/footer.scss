@@ -135,7 +135,25 @@ Copy Right Section
   Media Query
   ===============
   */
-  @media screen and (max-width: 500px) {
+  @media screen and (max-width: 1200px) {
+    max-width: 1200px;
+    padding: 20px;
+  }
+  @media screen and (max-width: 800px) {
+    padding: 20px;
+
+    &__cards {
+      grid-template-columns: repeat(2, 1fr);
+      .nft__footer__card {
+        padding-top: 1rem;
+        &:nth-child(2) {
+          order: 2;
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 480px) {
     padding: 20px;
     &__cards {
       display: flex;
@@ -150,8 +168,20 @@ Copy Right Section
           }
           button {
             padding: 15px;
-            right: 50px;
+            right: 100px;
             top: 13%;
+          }
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 350px) {
+    &__cards {
+      .nft__footer__card {
+        //   Input Section
+        .news_letter {
+          button {
+            right: 0px;
           }
         }
       }

@@ -126,7 +126,27 @@ Footer Section
   padding: 24px 0;
   border-top: 2px solid #f4f4f4;
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 1200px) {
+  #nft__footer .nft__footer {
+    max-width: 1200px;
+    padding: 20px;
+  }
+}
+@media screen and (max-width: 800px) {
+  #nft__footer .nft__footer {
+    padding: 20px;
+  }
+  #nft__footer .nft__footer__cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  #nft__footer .nft__footer__cards .nft__footer__card {
+    padding-top: 1rem;
+  }
+  #nft__footer .nft__footer__cards .nft__footer__card:nth-child(2) {
+    order: 2;
+  }
+}
+@media screen and (max-width: 480px) {
   #nft__footer .nft__footer {
     padding: 20px;
   }
@@ -141,7 +161,12 @@ Footer Section
   }
   #nft__footer .nft__footer__cards .nft__footer__card .news_letter button {
     padding: 15px;
-    right: 50px;
+    right: 100px;
     top: 13%;
+  }
+}
+@media screen and (max-width: 350px) {
+  #nft__footer .nft__footer__cards .nft__footer__card .news_letter button {
+    right: 0px;
   }
 }/*# sourceMappingURL=footer.css.map */
