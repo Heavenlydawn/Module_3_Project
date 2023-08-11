@@ -53,7 +53,7 @@ Featured Section
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 32px 0;
+  padding: 20px 0;
 }
 #featured .featured__left__card__user .user {
   display: flex;
@@ -231,6 +231,20 @@ Featured Section
   font-weight: 600;
   line-height: 103%;
   letter-spacing: -0.5px;
+}
+@media screen and (max-width: 1200px) {
+  #featured .featured {
+    padding: 134px 20px;
+  }
+  #featured .featured__left {
+    gap: 15px;
+  }
+  #featured .featured__left__futr {
+    gap: 21px;
+  }
+  #featured .featured__left__futr .card__info__user .eth {
+    padding: 5px;
+  }
 }
 @media screen and (max-width: 500px) {
   #featured .featured {
