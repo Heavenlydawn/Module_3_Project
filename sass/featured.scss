@@ -174,7 +174,7 @@ Featured Section
     }
     .crypto {
       &__card {
-        display: flex;
+        display: flex;;
         align-items: center;
         gap: 23px;
         border-bottom: 1px solid #f0f0f0;
@@ -277,12 +277,20 @@ Media Query
       }
     }
   }
-  @media screen and (max-width: 500px) {
-    padding: 20px;
+  @media screen and (max-width:800px) {
     justify-items: self-start;
     grid-template-columns: 1fr;
     gap: 5rem;
-
+    &__left {
+        &__card {
+          > img {
+            width: 400px;
+          }
+        }
+      }
+  }
+  @media screen and (max-width: 500px) {
+    padding: 20px;
     &__left {
       flex-direction: column;
       &__card {

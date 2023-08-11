@@ -246,12 +246,19 @@ Featured Section
     padding: 5px;
   }
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 800px) {
   #featured .featured {
-    padding: 20px;
     justify-items: self-start;
     grid-template-columns: 1fr;
     gap: 5rem;
+  }
+  #featured .featured__left__card > img {
+    width: 400px;
+  }
+}
+@media screen and (max-width: 500px) {
+  #featured .featured {
+    padding: 20px;
   }
   #featured .featured__left {
     flex-direction: column;
