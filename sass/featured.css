@@ -1,0 +1,251 @@
+@font-face {
+  font-family: "AvertaDemo";
+  src: url("../fonts/AvertaDemo-ExtraBoldItalic.otf") format("woff2"), format("AvertaDemo") url("../fonts/AvertaDemo-Regular.otf");
+}
+/* 
+  ==========
+  Variables
+  ==========
+  */
+/* 
+  ==========
+  General Selectors
+  ==========
+  */
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "AvertaDemo", sans-serif;
+}
+
+/*
+===============
+Featured Section
+===============
+*/
+#featured .featured {
+  width: 100vw;
+  margin: 0 auto;
+  max-width: 1440px;
+  padding: 134px 120px;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  grid-template-columns: 2fr 1fr;
+  /*
+  ============
+  Media Query
+  ============
+  */
+}
+#featured .featured__left {
+  display: flex;
+  align-items: center;
+  gap: 53px;
+}
+#featured .featured__left__card__user {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 32px 0;
+}
+#featured .featured__left__card__user .user {
+  display: flex;
+  align-items: center;
+}
+#featured .featured__left__card__user .user h4 {
+  color: #000;
+  font-size: 20px;
+  font-weight: 700;
+}
+#featured .featured__left__card__user .user p {
+  color: #363639;
+  font-size: 14px;
+  font-weight: 400;
+}
+#featured .featured__left__card .bid {
+  text-align: left;
+}
+#featured .featured__left__card .bid__info {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+#featured .featured__left__card .bid__info p small {
+  color: #3a3a3a;
+  font-size: 12px;
+  font-weight: 500;
+}
+#featured .featured__left__card .bid__info__eth {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+#featured .featured__left__card .bid__info__eth p {
+  color: #3a3a3a;
+  font-size: 16px;
+  font-weight: 700;
+}
+#featured .featured__left__futr {
+  display: flex;
+  flex-direction: column;
+  gap: 41px;
+}
+#featured .featured__left__futr .card {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+#featured .featured__left__futr .card__info h4 {
+  color: #000;
+  font-size: 20px;
+  font-weight: 700;
+}
+#featured .featured__left__futr .card__info__user {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+#featured .featured__left__futr .card__info__user .eth {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 10px 5px;
+  border-radius: 6px;
+  border: 1px solid #00ac4f;
+  color: #00ac4f;
+  font-size: 12px;
+  font-weight: 700;
+}
+#featured .featured__left__futr .card__info__user p {
+  color: #757575;
+  font-size: 14px;
+  font-weight: 400;
+}
+#featured .featured__left__futr .card__info .btn {
+  border-radius: 50px;
+  color: #3d00b7;
+  background: #fff;
+  font-size: 14px;
+  font-weight: 400;
+  border: none;
+  outline: none;
+  padding: 14px 20px;
+  border: 2px solid #3d00b7;
+  margin-top: 16px;
+  cursor: pointer;
+}
+#featured .featured__left__futr .card__info .btn__active {
+  background: #3d00b7;
+  color: #fff;
+}
+#featured .featured__right {
+  border-left: 2px solid #ececec;
+  padding-left: 42px;
+}
+#featured .featured__right__header h2 {
+  color: #000;
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+#featured .featured__right__header span {
+  color: #3d00b7;
+  font-size: 18px;
+  font-weight: 700;
+}
+#featured .featured__right .crypto__card {
+  display: flex;
+  align-items: center;
+  gap: 23px;
+  border-bottom: 1px solid #f0f0f0;
+  padding: 16px 0;
+}
+#featured .featured__right .crypto__card .num {
+  color: #000;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 103%;
+  letter-spacing: -0.6px;
+}
+#featured .featured__right .crypto__card__img {
+  position: relative;
+}
+#featured .featured__right .crypto__card__img :nth-child(2) {
+  position: absolute;
+  top: 0px;
+  right: -15px;
+}
+#featured .featured__right .crypto__card__count {
+  display: flex;
+  align-items: center;
+  gap: 36px;
+}
+#featured .featured__right .crypto__card__count .eth__card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+#featured .featured__right .crypto__card__count .eth__card p {
+  color: #000;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 103%;
+  letter-spacing: -0.4px;
+}
+#featured .featured__right .crypto__card__count .eth__card .count {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+#featured .featured__right .crypto__card__count .eth__card .count p {
+  color: #636363;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 103%;
+  letter-spacing: -0.35px;
+}
+#featured .featured__right .crypto__card__count .num__count {
+  width: 100%;
+  display: block;
+  text-align: right;
+}
+#featured .featured__right .crypto__card__count .num__count__green {
+  color: #14c8b0;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 103%;
+  letter-spacing: -0.5px;
+}
+#featured .featured__right .crypto__card__count .num__count__red {
+  color: #ff002e;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 103%;
+  letter-spacing: -0.5px;
+}
+@media screen and (max-width: 500px) {
+  #featured .featured {
+    padding: 20px;
+    justify-items: self-start;
+    grid-template-columns: 1fr;
+    gap: 5rem;
+  }
+  #featured .featured__left {
+    flex-direction: column;
+  }
+  #featured .featured__left__card > img {
+    width: 320px;
+  }
+  #featured .featured__right {
+    padding-left: 20px;
+  }
+}/*# sourceMappingURL=featured.css.map */
