@@ -232,7 +232,7 @@ Featured Section
   line-height: 103%;
   letter-spacing: -0.5px;
 }
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1333px) {
   #featured .featured {
     padding: 134px 20px;
   }
