@@ -1,0 +1,190 @@
+@font-face {
+  font-family: "AvertaDemo";
+  src: url("../fonts/AvertaDemo-ExtraBoldItalic.otf") format("woff2"),
+    format("AvertaDemo") url("../fonts/AvertaDemo-Regular.otf");
+}
+/* 
+==========
+Variables
+==========
+*/
+$footer-btn-color: #2639ed;
+$footer-input: #959595;
+$footer-font-color: #363639;
+$copyright-color: #a4a4a4;
+$black: #000;
+$neutral: #fff;
+$font-family: "AvertaDemo", sans-serif;
+$footer-border-radius: 45.595px;
+
+/* 
+==========
+General Selectors
+==========
+*/
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+li {
+  list-style: none;
+}
+body {
+  font-family: $font-family;
+}
+/*
+===============
+Footer Section
+===============
+*/
+#nft__footer .nft__footer {
+  width: 100vw;
+  max-width: 1440px;
+  margin: 0 auto;
+  margin-block-start: 83px;
+  padding: 64px 120px;
+
+  &__cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+    .nft__footer__card {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+      .nft__footer__logo {
+        color: $black;
+        font-size: 24px;
+        font-weight: 700;
+      }
+      .socials {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+      }
+      p {
+        color: #565656;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 160%;
+      }
+      h3 {
+        color: $black;
+        font-size: 18px;
+        font-weight: 700;
+      }
+      li {
+        color: #3d3d3d;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 200%;
+      }
+      //   Input Section
+      .news_letter {
+        position: relative;
+        input {
+          width: 364px;
+          height: 60.7933px;
+          border-radius: $footer-border-radius;
+          border: 2px solid #f1f1f1;
+          background: #fff;
+          color: #959595;
+          font-size: 12.159px;
+          font-weight: 400;
+          padding: 22px 25px;
+        }
+        button {
+          cursor: pointer;
+          outline: none;
+          border: none;
+          border-radius: $footer-border-radius;
+          background: $footer-btn-color;
+          padding: 15.198px 30.397px;
+          color: $neutral;
+          font-size: 12.159px;
+          font-weight: 400;
+          letter-spacing: 0.79px;
+          position: absolute;
+          right: 3%;
+          top: 13%;
+        }
+      }
+    }
+  }
+  /*
+===============
+Copy Right Section
+===============
+*/
+  .copy_right {
+    margin-block-start: 69px;
+    color: #a4a4a4;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 160%;
+    text-align: center;
+    padding: 24px 0;
+    border-top: 2px solid #f4f4f4;
+  }
+
+  /*
+  ===============
+  Media Query
+  ===============
+  */
+  @media screen and (max-width: 1200px) {
+    max-width: 1200px;
+    padding: 20px;
+  }
+  @media screen and (max-width: 800px) {
+    padding: 20px;
+
+    &__cards {
+      grid-template-columns: repeat(2, 1fr);
+      .nft__footer__card {
+        padding-top: 1rem;
+        &:nth-child(2) {
+          order: 2;
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    padding: 20px;
+    &__cards {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      .nft__footer__card {
+        //   Input Section
+        .news_letter {
+          input {
+            width: 290px;
+            padding: 10px;
+          }
+          button {
+            padding: 15px;
+            right: 100px;
+            top: 13%;
+          }
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 380px) {
+    &__cards {
+      .nft__footer__card {
+        //   Input Section
+        .news_letter {
+          button {
+            right: 50px;
+          }
+        }
+      }
+    }
+  }
+}
