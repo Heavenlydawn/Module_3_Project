@@ -184,6 +184,11 @@ Hero Section
   align-items: center;
   background: url(../images/Dot.png) no-repeat;
   background-position: bottom 80px left 0;
+  /*
+  ===============
+  Media Query
+  ===============
+  */
 }
 #hero .hero__left {
   width: 50%;
@@ -316,6 +321,38 @@ Hero Section
   right: -67px;
   z-index: -2;
 }
+@media screen and (max-width: 500px) {
+  #hero .hero {
+    padding: 20px;
+    flex-direction: column;
+    gap: 20px;
+  }
+  #hero .hero__left {
+    width: 100%;
+  }
+  #hero .hero__right__img_1 {
+    width: 300px;
+    height: 500px;
+    border-top-right-radius: 10px;
+  }
+  #hero .hero__right__img_1_flex_content .bid {
+    width: 300px;
+  }
+  #hero .hero__right > :nth-child(2) {
+    top: 74px;
+    right: -26px;
+  }
+  #hero .hero__right > :nth-child(2) img {
+    width: 300px;
+  }
+  #hero .hero__right > :nth-child(3) {
+    top: 89.5px;
+    right: -47px;
+  }
+  #hero .hero__right > :nth-child(3) img {
+    width: 250px;
+  }
+}
 
 /*
 ===========
@@ -332,6 +369,11 @@ Info Section
   gap: 86px;
   background: rgba(217, 224, 236, 0.2);
   backdrop-filter: blur(25px);
+  /*
+  ============
+  Media Query
+  ============
+  */
 }
 #info .info__header h2 {
   color: #000;
@@ -357,4 +399,10 @@ Info Section
   font-size: 14px;
   font-weight: 400;
   line-height: 160%;
+}
+@media screen and (max-width: 500px) {
+  #info .info {
+    padding: 20px;
+    flex-direction: column;
+  }
 }/*# sourceMappingURL=hero.css.map */
