@@ -1,0 +1,268 @@
+@font-face {
+  font-family: "AvertaDemo";
+  src: url("../fonts/AvertaDemo-ExtraBoldItalic.otf") format("woff2"),
+    format("AvertaDemo") url("../fonts/AvertaDemo-Regular.otf");
+}
+/* 
+  ==========
+  Variables
+  ==========
+  */
+$font-family: "AvertaDemo", sans-serif;
+$border-radius: 100px;
+$btn-background: #3d00b7;
+$font-color: #4f33a3;
+$font-green: #00ac4f;
+$font-grey: #838383;
+$neutral: #fff;
+$black: #000;
+$discover-bg: rgba(217, 224, 236, 0.2);
+/* 
+  ==========
+  General Selectors
+  ==========
+  */
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $font-family;
+}
+
+/* 
+  ==========
+  Discover Section
+  ==========
+  */
+#discover .discover {
+  width: 100vw;
+  max-width: 1440px;
+  margin: 0 auto;
+  margin-block-start: 122px;
+  padding: 64px 120px;
+  background: $discover-bg;
+  backdrop-filter: blur(25px);
+
+  header {
+    h2 {
+      font-size: 34px;
+      font-weight: 700;
+    }
+    .filter__nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .discover__filter {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        padding: 40px 0px;
+      }
+      .btn__filter {
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 17.452px;
+        padding: 10px 20px;
+        border-radius: $border-radius;
+        background: rgba(220, 220, 220, 0.2);
+      }
+      .btn {
+        border-radius: $border-radius;
+        background: rgba(220, 220, 220, 0.2);
+        text-align: center;
+        outline: none;
+        border: none;
+        cursor: pointer;
+        &:hover {
+          background: #998dbda6;
+        }
+      }
+      .btn__active {
+        background: $btn-background;
+        color: $neutral;
+      }
+      .filter__icon {
+        button {
+          display: flex;
+          align-items: center;
+          gap: 5px;
+          padding: 10px 20px;
+        }
+        p {
+          font-size: 14px;
+          font-weight: 500;
+          line-height: 17.452px;
+        }
+      }
+    }
+  }
+  /* 
+  ==========
+  Discover Card Section
+  ==========
+  */
+  &__cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+    align-items: center;
+    gap: 39.49px;
+    .discover__card {
+      width: 269.876px;
+      background: $neutral;
+      border-radius: 13.165px;
+      border: 1.097px solid rgba(242, 242, 242, 0.5);
+      padding: 10px;
+      /* 
+  ==========
+  Card Images Section
+  ==========
+  */
+      .card_img {
+        position: relative;
+        .card__user {
+          position: absolute;
+          top: 90%;
+          left: 5%;
+
+          :nth-child(2) {
+            position: absolute;
+            left: 60%;
+          }
+          :nth-child(3) {
+            position: absolute;
+            left: 130%;
+          }
+          :nth-child(4) {
+            position: absolute;
+            left: 200%;
+          }
+        }
+      }
+      /* 
+  ==========
+  Card Content Section
+  ==========
+  */
+      .card__content {
+        margin-block-start: 21.94px;
+        padding: 10px;
+        h3 {
+          font-size: 19.747px;
+          font-weight: 700;
+          line-height: 19.146px;
+        }
+        .eth {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          border-bottom: 2px solid #f4f4f4;
+          padding: 20px 0px;
+          &__count {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            p {
+              color: $font-green;
+              font-size: 10.971px;
+              font-weight: 700;
+            }
+          }
+          .count {
+            p {
+              color: $font-grey;
+              font-size: 13.165px;
+              font-weight: 500;
+              line-height: 19.146px;
+            }
+          }
+        }
+        .bidding {
+          display: flex;
+          justify-content: space-between;
+          margin-block-start: 10.84px;
+          .btn {
+            border-radius: 109.706px;
+            background: #f5f5f5;
+            background: rgba(220, 220, 220, 0.2);
+            text-align: center;
+            padding: 4.39px 11px;
+            outline: none;
+            border: none;
+            cursor: pointer;
+            color: $font-color;
+          }
+          .btn__light {
+            font-size: 10.971px;
+            font-weight: 700;
+            line-height: 19.146px;
+          }
+          .btn__bid {
+            font-size: 15.359px;
+            font-weight: 500;
+          }
+        }
+      }
+    }
+  }
+  .more__nft {
+    text-align: center;
+    margin-block-start: 55px;
+    .btn__more {
+      text-align: center;
+      padding: 20px 40px;
+      border-radius: 50px;
+      border: 2px solid #3d00b7;
+      color: $font-color;
+      font-size: 20px;
+      font-weight: 500;
+      background: $neutral;
+      cursor: pointer;
+    }
+  }
+
+  /* 
+  ==========
+  Media Query
+  ==========
+  */
+  @media screen and (max-width: 500px) {
+    padding: 20px;
+
+    header {
+      text-align: center;
+      h2 {
+        font-size: 20px;
+      }
+      .filter__nav {
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+
+        .discover__filter {
+          display: none;
+          justify-content: start;
+          align-items: start;
+          flex-direction: column;
+        }
+        .filter__icon {
+          margin: 5% auto;
+        }
+      }
+    }
+    /* 
+    ==========
+    Discover Card Section
+    ==========
+    */
+    &__cards {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+}

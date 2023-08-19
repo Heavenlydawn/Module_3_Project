@@ -1,0 +1,305 @@
+@font-face {
+  font-family: "AvertaDemo";
+  src: url("../fonts/AvertaDemo-ExtraBoldItalic.otf") format("woff2"),
+    format("AvertaDemo") url("../fonts/AvertaDemo-Regular.otf");
+}
+/* 
+  ==========
+  Variables
+  ==========
+  */
+$font-family: "AvertaDemo", sans-serif;
+$border-radius-hero: 60px;
+$border-radius: 100px;
+$btn-background: #3d00b7;
+$font-grey: #838383;
+$font-blue: #3d00b7;
+$neutral: #fff;
+$black: #000;
+$transition: all 0.3s linear;
+/* 
+  ==========
+  General Selectors
+  ==========
+  */
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $font-family;
+}
+/*
+===============
+Featured Section
+===============
+*/
+#featured .featured {
+  width: 100vw;
+  margin: 0 auto;
+  max-width: 1440px;
+  padding: 134px 120px;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  grid-template-columns: 2fr 1fr;
+
+  &__left {
+    display: flex;
+    align-items: center;
+    gap: 53px;
+    &__card {
+      &__user {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 0;
+        .user {
+          display: flex;
+          align-items: center;
+          h4 {
+            color: $black;
+            font-size: 20px;
+            font-weight: 700;
+          }
+          p {
+            color: #363639;
+            font-size: 14px;
+            font-weight: 400;
+          }
+        }
+      }
+      .bid {
+        text-align: left;
+        &__info {
+          display: flex;
+          align-items: center;
+          flex-direction: column;
+          p {
+            small {
+              color: #3a3a3a;
+              font-size: 12px;
+              font-weight: 500;
+            }
+          }
+          &__eth {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            p {
+              color: #3a3a3a;
+              font-size: 16px;
+              font-weight: 700;
+            }
+          }
+        }
+      }
+    }
+    &__futr {
+      display: flex;
+      flex-direction: column;
+      gap: 41px;
+      .card {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        &__info {
+          h4 {
+            color: $black;
+            font-size: 20px;
+            font-weight: 700;
+          }
+          &__user {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            .eth {
+              display: flex;
+              align-items: center;
+              gap: 5px;
+              padding: 10px 5px;
+              border-radius: 6px;
+              border: 1px solid #00ac4f;
+              color: #00ac4f;
+              font-size: 12px;
+              font-weight: 700;
+            }
+            p {
+              color: #757575;
+              font-size: 14px;
+              font-weight: 400;
+            }
+          }
+          .btn {
+            border-radius: 50px;
+            color: $font-blue;
+            background: $neutral;
+            font-size: 14px;
+            font-weight: 400;
+            border: none;
+            outline: none;
+            padding: 14px 20px;
+            border: 2px solid #3d00b7;
+            margin-top: 16px;
+            cursor: pointer;
+          }
+          .btn__active {
+            background: #3d00b7;
+            color: $neutral;
+          }
+        }
+      }
+    }
+  }
+  &__right {
+    border-left: 2px solid #ececec;
+    padding-left: 42px;
+
+    &__header {
+      h2 {
+        color: $black;
+        font-size: 20px;
+        font-weight: 700;
+        text-transform: uppercase;
+      }
+      span {
+        color: #3d00b7;
+        font-size: 18px;
+        font-weight: 700;
+      }
+    }
+    .crypto {
+      &__card {
+        display: flex;
+        align-items: center;
+        gap: 23px;
+        border-bottom: 1px solid #f0f0f0;
+        padding: 16px 0;
+        .num {
+          color: $black;
+          text-align: center;
+          font-size: 24px;
+          font-weight: 700;
+          line-height: 103%;
+          letter-spacing: -0.6px;
+        }
+        &__img {
+          position: relative;
+
+          :nth-child(2) {
+            position: absolute;
+            top: 0px;
+            right: -15px;
+          }
+        }
+        &__count {
+          display: flex;
+          align-items: center;
+          gap: 36px;
+          .eth__card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+            p {
+              color: #000;
+              font-size: 16px;
+              font-weight: 500;
+              line-height: 103%;
+              letter-spacing: -0.4px;
+            }
+            .count {
+              display: flex;
+              align-items: center;
+              gap: 6px;
+              p {
+                color: #636363;
+                font-size: 14px;
+                font-weight: 600;
+                line-height: 103%;
+                letter-spacing: -0.35px;
+              }
+            }
+          }
+          .num__count {
+            width: 100%;
+            display: block;
+            text-align: right;
+
+            &__green {
+              color: #14c8b0;
+              font-size: 20px;
+              font-weight: 600;
+              line-height: 103%;
+              letter-spacing: -0.5px;
+            }
+            &__red {
+              color: #ff002e;
+              font-size: 20px;
+              font-weight: 600;
+              line-height: 103%;
+              letter-spacing: -0.5px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  /*
+============
+Media Query
+============
+*/
+
+  @media screen and (max-width: 1333px) {
+    padding: 134px 20px;
+
+    &__left {
+      gap: 15px;
+
+      &__futr {
+        gap: 21px;
+        .card {
+          &__info {
+            &__user {
+              .eth {
+                padding: 5px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 800px) {
+    justify-items: self-start;
+    grid-template-columns: 1fr;
+    gap: 5rem;
+    &__left {
+      &__card {
+        > img {
+          width: 400px;
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 500px) {
+    padding: 20px;
+    &__left {
+      flex-direction: column;
+      &__card {
+        > img {
+          width: 320px;
+        }
+      }
+    }
+    &__right {
+      padding-left: 20px;
+    }
+  }
+}
