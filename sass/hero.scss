@@ -257,6 +257,7 @@ Hero Section
     // display: flex;
     position: relative;
     &__img_1 {
+      position: relative;
       background: url(../images/hero_bg_1.png) no-repeat;
       width: 400px;
       height: 500px;
@@ -267,6 +268,12 @@ Hero Section
         font-weight: 700;
         letter-spacing: -1.4px;
         padding: 26.67px 0 0 26.67px;
+      }
+      .circle{
+        position: absolute;
+        top: 40%;
+        left: -23%;
+        z-index: 1;
       }
       &_flex {
         height: 70%;
