@@ -251,12 +251,6 @@ Hero Section
   letter-spacing: -1.4px;
   padding: 26.67px 0 0 26.67px;
 }
-#hero .hero__right__img_1 .circle {
-  position: absolute;
-  top: 40%;
-  left: -23%;
-  z-index: 1;
-}
 #hero .hero__right__img_1_flex {
   height: 70%;
 }
@@ -288,6 +282,13 @@ Hero Section
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+#hero .hero__right__img_1_flex_content .bid::before {
+  content: url(../images/hero_bg_circle...png);
+  width: 10%;
+  height: 10%;
+  margin-inline-start: -40%;
+  margin-block-start: -105%;
 }
 #hero .hero__right__img_1_flex_content .bid__current small {
   color: #fff;
