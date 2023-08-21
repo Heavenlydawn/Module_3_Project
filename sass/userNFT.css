@@ -38,6 +38,7 @@ User NFT Section
   position: relative;
 }
 #userNFT .userNFT__left {
+  width: 50%;
   position: absolute;
   left: 0;
   top: 50%;
@@ -84,7 +85,7 @@ User NFT Section
 #userNFT .userNFT__right {
   position: absolute;
   top: 180%;
-  right: -10%;
+  right: -5%;
   width: 50%;
 }
 #userNFT .userNFT__right h1 {

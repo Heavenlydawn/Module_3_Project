@@ -195,7 +195,7 @@ Hero Section
 }
 #hero .hero__left h2 {
   font-size: 40px;
-  font-weight: 400;
+  font-weight: bold;
   letter-spacing: 2px;
 }
 #hero .hero__left p {

@@ -47,6 +47,7 @@ User NFT Section
   position: relative;
 
   &__left {
+    width: 50%;
     position: absolute;
     left: 0;
     top: 50%;
@@ -94,7 +95,7 @@ User NFT Section
   &__right {
     position: absolute;
     top: 180%;
-    right: -10%;
+    right: -5%;
     width: 50%;
     h1 {
       color: $black;
