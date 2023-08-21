@@ -44,15 +44,18 @@ User NFT Section
   margin: 0% auto;
   margin-block-end: 700px;
   padding: 102px 120px;
+  // display: flex;
+  // justify-content: center;
+  // align-items: center;
   position: relative;
 
   &__left {
-    width: 50%;
     position: absolute;
     left: 0;
     top: 50%;
     > :nth-child(1) {
       position: relative;
+      // position: absolute;
       .image__1 {
         position: absolute;
         top: 0;
