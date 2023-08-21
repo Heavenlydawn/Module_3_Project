@@ -346,6 +346,10 @@ Hero Section
   #hero .hero__right__img_1_flex_content .bid {
     width: 300px;
   }
+  #hero .hero__right__img_1_flex_content .bid::before {
+    margin-inline-start: -25%;
+    margin-block-start: -120%;
+  }
   #hero .hero__right > :nth-child(2) {
     top: 74px;
     right: -26px;

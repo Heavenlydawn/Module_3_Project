@@ -392,6 +392,10 @@ Media Query
           &_content {
             .bid {
               width: 300px;
+              &::before {
+                margin-inline-start: -25%;
+                margin-block-start: -120%;
+              }
             }
           }
         }
