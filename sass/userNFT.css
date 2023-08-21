@@ -85,7 +85,7 @@ User NFT Section
 #userNFT .userNFT__right {
   position: absolute;
   top: 180%;
-  right: -5%;
+  right: -10%;
   width: 50%;
 }
 #userNFT .userNFT__right h1 {
@@ -99,6 +99,7 @@ User NFT Section
   font-size: 18px;
   font-weight: 400;
   line-height: 160%;
+  width: 70%;
 }
 #userNFT .userNFT__right .btn__NFT {
   margin-block-start: 52px;
