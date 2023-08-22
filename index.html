@@ -90,7 +90,6 @@
             <img src="./images/hero_bg_circle.png" alt="">
           </div> -->
           <div class="hero__right__img_1">
-            
             <h2>Abstr Gradient NFT</h2>
             <div class="hero__right__img_1_flex">
               <div class="circle"></div>
@@ -437,37 +436,37 @@
     <!-- User NFT Section -->
     <section id="userNFT">
       <div class="userNFT">
-       <div class="userNFT__nested">
-        <div class="userNFT__left">
-          <div class="NFT_image">
-            <div class="image__1">
-              <img src="./images/userNFT1.png" alt="" />
-              <!-- User NFT -->
-              <div class="user__img">
-                <img src="./images/NFTuser1.png" alt="" />
+        <div class="userNFT__nested">
+          <div class="userNFT__left">
+            <div class="NFT_image">
+              <div class="image__1">
+                <img src="./images/userNFT1.png" alt="" />
+                <!-- User NFT -->
+                <div class="user__img">
+                  <img src="./images/NFTuser1.png" alt="" />
+                </div>
               </div>
             </div>
-          </div>
-          <div class="NFT_image">
-            <div class="image__2">
-              <img src="./images/userNFT2.png" alt="" />
-              <!-- user NFT -->
-              <div class="user__img">
-                <img src="./images/NFTuser2.png" alt="" />
+            <div class="NFT_image">
+              <div class="image__2">
+                <img src="./images/userNFT2.png" alt="" />
+                <!-- user NFT -->
+                <div class="user__img">
+                  <img src="./images/NFTuser2.png" alt="" />
+                </div>
               </div>
             </div>
-          </div>
-          <div class="NFT_image">
-            <div class="image__3">
-              <img src="./images/userNFT3.png" alt="" />
-              <!-- user NFT -->
-              <div class="user__img">
-                <img src="./images/NFTuser2.png" alt="" />
+            <div class="NFT_image">
+              <div class="image__3">
+                <img src="./images/userNFT3.png" alt="" />
+                <!-- user NFT -->
+                <div class="user__img">
+                  <img src="./images/NFTuser2.png" alt="" />
+                </div>
               </div>
             </div>
           </div>
         </div>
-       </div>
         <!-- User NFT Right -->
         <div class="userNFT__right">
           <h1>CREATE AND SELL YOUR NFTs</h1>
@@ -490,15 +489,21 @@
           <h2>DISCOVER MORE NFTS</h2>
           <div class="filter__nav">
             <div class="discover__filter">
-              <button class="btn btn__filter btn__active">
+              <button id="all" class="btn btn__filter btn__active" data-filter="All Categories">
                 All Categories
               </button>
-              <button class="btn btn__filter">Arts</button>
-              <button class="btn btn__filter">Celebrities</button>
-              <button class="btn btn__filter">Gaming</button>
-              <button class="btn btn__filter">Sports</button>
-              <button class="btn btn__filter">Music</button>
-              <button class="btn btn__filter">Crypto</button>
+              <button class="btn btn__filter" data-filter="Arts">Arts</button>
+              <button class="btn btn__filter" data-filter="Celebrities">
+                Celebrities
+              </button>
+              <button class="btn btn__filter" data-filter="Game">Gaming</button>
+              <button class="btn btn__filter" data-filter="Sports">
+                Sports
+              </button>
+              <button class="btn btn__filter" data-filter="Music">Music</button>
+              <button class="btn btn__filter" data-filter="Crypto">
+                Crypto
+              </button>
             </div>
             <div class="filter__icon">
               <button class="btn">
@@ -513,7 +518,7 @@
         <!-- Discover NFT Cards -->
         <div class="discover__cards">
           <!-- Card_1 -->
-          <div class="discover__card">
+          <div class="discover__card" data-filter="Arts">
             <!-- Card Images -->
             <div class="card_img">
               <img src="./images/NFT_1.png" alt="" />
@@ -544,7 +549,7 @@
             </div>
           </div>
           <!-- Card_2 -->
-          <div class="discover__card">
+          <div class="discover__card" data-filter="Celebrities">
             <!-- Card Images -->
             <div class="card_img">
               <img src="./images/NFT_2.png" alt="" />
@@ -575,7 +580,7 @@
             </div>
           </div>
           <!-- Card_3 -->
-          <div class="discover__card">
+          <div class="discover__card" data-filter="Music">
             <!-- Card Images -->
             <div class="card_img">
               <img src="./images/NFT_3.png" alt="" />
@@ -606,7 +611,7 @@
             </div>
           </div>
           <!-- Card_4 -->
-          <div class="discover__card">
+          <div class="discover__card" data-filter="king">
             <!-- Card Images -->
             <div class="card_img">
               <img src="./images/NFT_4.png" alt="" />
@@ -637,7 +642,7 @@
             </div>
           </div>
           <!-- Card_5 -->
-          <div class="discover__card">
+          <div class="discover__card" data-filter="Arts">
             <!-- Card Images -->
             <div class="card_img">
               <img src="./images/NFT_4.png" alt="" />
@@ -668,7 +673,7 @@
             </div>
           </div>
           <!-- Card_6 -->
-          <div class="discover__card">
+          <div class="discover__card" data-filter="Celebrities">
             <!-- Card Images -->
             <div class="card_img">
               <img src="./images/NFT_3.png" alt="" />
@@ -699,7 +704,7 @@
             </div>
           </div>
           <!-- Card_7 -->
-          <div class="discover__card">
+          <div class="discover__card" data-filter="Music">
             <!-- Card Images -->
             <div class="card_img">
               <img src="./images/NFT_1.png" alt="" />
@@ -730,7 +735,7 @@
             </div>
           </div>
           <!-- Card_8 -->
-          <div class="discover__card">
+          <div class="discover__card" data-filter="Game">
             <!-- Card Images -->
             <div class="card_img">
               <img src="./images/NFT_2.png" alt="" />
@@ -761,7 +766,7 @@
             </div>
           </div>
           <!-- Card_9 -->
-          <div class="discover__card">
+          <div class="discover__card" data-filter="Arts">
             <!-- Card Images -->
             <div class="card_img">
               <img src="./images/NFT_1.png" alt="" />
@@ -792,7 +797,7 @@
             </div>
           </div>
           <!-- Card_10 -->
-          <div class="discover__card">
+          <div class="discover__card" data-filter="Crypto">
             <!-- Card Images -->
             <div class="card_img">
               <img src="./images/NFT_4.png" alt="" />
@@ -823,7 +828,7 @@
             </div>
           </div>
           <!-- Card_11 -->
-          <div class="discover__card">
+          <div class="discover__card" data-filter="Music">
             <!-- Card Images -->
             <div class="card_img">
               <img src="./images/NFT_2.png" alt="" />
@@ -854,7 +859,7 @@
             </div>
           </div>
           <!-- Card_12 -->
-          <div class="discover__card">
+          <div class="discover__card" data-filter="Game">
             <!-- Card Images -->
             <div class="card_img">
               <img src="./images/NFT_3.png" alt="" />
@@ -885,7 +890,7 @@
             </div>
           </div>
           <!-- Card_13 -->
-          <div class="discover__card">
+          <div class="discover__card" data-filter="Arts">
             <!-- Card Images -->
             <div class="card_img">
               <img src="./images/NFT_3.png" alt="" />
@@ -916,7 +921,7 @@
             </div>
           </div>
           <!-- Card_14 -->
-          <div class="discover__card">
+          <div class="discover__card" data-filter="Sports">
             <!-- Card Images -->
             <div class="card_img">
               <img src="./images/NFT_2.png" alt="" />
@@ -947,7 +952,7 @@
             </div>
           </div>
           <!-- Card_15 -->
-          <div class="discover__card">
+          <div class="discover__card" data-filter="Music">
             <!-- Card Images -->
             <div class="card_img">
               <img src="./images/NFT_1.png" alt="" />
@@ -978,7 +983,7 @@
             </div>
           </div>
           <!-- Card_16 -->
-          <div class="discover__card">
+          <div class="discover__card" data-filter="Sports">
             <!-- Card Images -->
             <div class="card_img">
               <img src="./images/NFT_4.png" alt="" />
