@@ -51,3 +51,13 @@ btn__filter.forEach((b) => {
     });
   });
 });
+
+// All Filter Function
+const allFilter = document.querySelector(".allFilter");
+const discoverFilter = document.querySelector(".discover__filter")
+allFilter.addEventListener("click",filterDisplay)
+
+function filterDisplay(){
+  console.log(discoverFilter)
+  discoverFilter.classList.toggle("showFilter");
+}

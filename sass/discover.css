@@ -237,10 +237,20 @@ body {
     align-items: start;
   }
   #discover .discover header .filter__nav .discover__filter {
-    display: none;
+    order: 2;
+    height: 0rem;
+    overflow: hidden;
     justify-content: start;
     align-items: start;
     flex-direction: column;
+    transition: all 0.3s linear;
+  }
+  #discover .discover header .filter__nav .discover__filter > :nth-child(7) {
+    justify-items: center;
+    align-items: center;
+  }
+  #discover .discover header .filter__nav .discover__filter.showFilter {
+    height: 30rem;
   }
   #discover .discover header .filter__nav .filter__icon {
     margin: 5% auto;

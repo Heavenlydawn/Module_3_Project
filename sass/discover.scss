@@ -17,6 +17,7 @@ $font-grey: #838383;
 $neutral: #fff;
 $black: #000;
 $discover-bg: rgba(217, 224, 236, 0.2);
+$transition: all 0.3s linear;
 /* 
   ==========
   General Selectors
@@ -236,7 +237,6 @@ body {
   }
   @media screen and (max-width: 500px) {
     padding: 20px;
-
     header {
       text-align: center;
       h2 {
@@ -248,13 +248,29 @@ body {
         align-items: start;
 
         .discover__filter {
-          display: none;
+          // display: none;
+          order: 2;
+          // display: grid;
+          // grid-template-columns: repeat(3, 1fr);
+          // justify-items: start;
+          // align-items: start;
+          height: 0rem;
+          overflow: hidden;
           justify-content: start;
           align-items: start;
           flex-direction: column;
+          transition: $transition;
+          > :nth-child(7){
+            justify-items: center;
+            align-items: center;
+          }
+          &.showFilter{
+            height: 30rem;
+          }
         }
         .filter__icon {
           margin: 5% auto;
+          
         }
       }
     }
