@@ -45,8 +45,7 @@ body {
   margin: 0 auto;
   margin-block-start: 122px;
   padding: 64px 120px;
-  background: $discover-bg;
-  backdrop-filter: blur(25px);
+  
 
   header {
     h2 {
@@ -232,6 +231,9 @@ body {
   Media Query
   ==========
   */
+  @media screen and (max-width: 1200px) {
+    padding: 20px;
+  }
   @media screen and (max-width: 500px) {
     padding: 20px;
 

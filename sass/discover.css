@@ -35,8 +35,6 @@ body {
   margin: 0 auto;
   margin-block-start: 122px;
   padding: 64px 120px;
-  background: rgba(217, 224, 236, 0.2);
-  backdrop-filter: blur(25px);
   /* 
   ==========
   Discover Card Section
@@ -212,6 +210,11 @@ body {
   font-weight: 500;
   background: #fff;
   cursor: pointer;
+}
+@media screen and (max-width: 1200px) {
+  #discover .discover {
+    padding: 20px;
+  }
 }
 @media screen and (max-width: 500px) {
   #discover .discover {
