@@ -260,10 +260,6 @@ body {
           align-items: start;
           flex-direction: column;
           transition: $transition;
-          > :nth-child(7){
-            justify-items: center;
-            align-items: center;
-          }
           &.showFilter{
             height: 30rem;
           }

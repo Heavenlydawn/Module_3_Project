@@ -245,10 +245,6 @@ body {
     flex-direction: column;
     transition: all 0.3s linear;
   }
-  #discover .discover header .filter__nav .discover__filter > :nth-child(7) {
-    justify-items: center;
-    align-items: center;
-  }
   #discover .discover header .filter__nav .discover__filter.showFilter {
     height: 30rem;
   }

@@ -35,11 +35,14 @@ User NFT Section
   margin: 0% auto;
   margin-block-end: 700px;
   padding: 102px 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: relative;
 }
 #userNFT .userNFT__left {
   position: absolute;
-  left: 0;
+  left: 5%;
   top: 50%;
 }
 #userNFT .userNFT__left > :nth-child(1) {
@@ -119,7 +122,7 @@ User NFT Section
   #userNFT .userNFT__right {
     position: absolute;
     top: 400%;
-    right: -15%;
+    right: -20%;
   }
   #userNFT .userNFT__right h1 {
     width: 70%;
@@ -135,6 +138,9 @@ User NFT Section
   }
   #userNFT .userNFT__right {
     position: static !important;
+    width: 100%;
+  }
+  #userNFT .userNFT__right h1 {
     width: 100%;
   }
 }/*# sourceMappingURL=userNFT.css.map */
