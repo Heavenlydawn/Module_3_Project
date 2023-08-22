@@ -112,6 +112,19 @@ User NFT Section
   letter-spacing: 1.3px;
   padding: 20px 40px;
 }
+@media screen and (max-width: 1200px) {
+  #userNFT .userNFT {
+    padding: 30px;
+  }
+  #userNFT .userNFT__right {
+    position: absolute;
+    top: 400%;
+    right: -15%;
+  }
+  #userNFT .userNFT__right h1 {
+    width: 70%;
+  }
+}
 @media screen and (max-width: 500px) {
   #userNFT .userNFT {
     padding: 20px;
