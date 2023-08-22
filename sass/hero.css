@@ -22,6 +22,7 @@ General Selectors
 
 body {
   font-family: "AvertaDemo", sans-serif;
+  overflow-x: clip;
 }
 
 li {
